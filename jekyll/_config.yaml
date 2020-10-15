@@ -1,0 +1,24 @@
+collections:
+  papers:
+    output: true
+
+defaults:
+  - scope:
+      path: ''
+      type: papers
+    values:
+      layout: paper
+  - scope:
+      path: ''
+      type: posts
+    values:
+      layout: post
+  - scope:
+      path: ''
+    values:
+      layout: page
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
