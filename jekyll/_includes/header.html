@@ -1,0 +1,9 @@
+<header>
+  page header
+
+  <nav>
+    {% for item in site.data.header_navigation %}
+    <a href="{{ item.url }}">{{ item.text }}</a>
+    {% endfor %}
+  </nav>
+</header>
