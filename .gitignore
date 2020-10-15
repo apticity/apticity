@@ -1,2 +1,6 @@
+# jekyll
+.jekyll-cache/
+_site/
+
 # macos
 .DS_Store
