@@ -4,3 +4,6 @@ _site/
 
 # macos
 .DS_Store
+
+# nodejs
+node_modules/
