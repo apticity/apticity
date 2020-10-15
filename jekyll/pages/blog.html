@@ -1,0 +1,12 @@
+---
+permalink: /blog
+---
+
+<section>
+  {% for post in site.posts %}
+  <article>
+    <h2>{{ post.title }}</h2>
+    <p>{{ post.excerpt }}</p>
+  </article>
+  {% endfor %}
+</section>

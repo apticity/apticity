@@ -1,0 +1,12 @@
+---
+permalink: /docs
+---
+
+<section>
+  {% for paper in site.papers %}
+  <article>
+    <h2>{{ paper.title }}</h2>
+    <p>{{ paper.excerpt }}</p>
+  </article>
+  {% endfor %}
+</section>
