@@ -13,8 +13,7 @@ jobs:
         with:
           bundler-cache: true
           ruby-version: 2.6
-      - name: bundle_install
-        run: bundle install
+          working-directory: jekyll
       - name: npm_install
         run: npm clean-install
       - name: npm_build
