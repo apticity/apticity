@@ -1,5 +1,8 @@
 # readme
 
+![build status](https://github.com/apticity/apticity/workflows/build/badge.svg)
+![release status](https://github.com/apticity/apticity/workflows/release/badge.svg)
+
 ## maintainer
 
 [![fred belotte][fb_avatar]][fb_profile]
