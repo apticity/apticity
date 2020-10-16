@@ -1,0 +1,29 @@
+jobs:
+  build:
+    defaults:
+      run:
+        working-directory: jekyll
+    name: build
+    runs-on: ubuntu-20.04
+    steps:
+      - name: git_checkout
+        uses: actions/checkout@v2.3.3
+      - name: ruby_setup
+        uses: ruby/setup-ruby@v1.47.0
+        with:
+          bundler-cache: true
+          ruby-version: 2.6
+          working-directory: jekyll
+      - name: npm_install
+        run: npm clean-install
+      - name: npm_build
+        run: npm run build
+
+name: release
+
+on:
+  push:
+    branches:
+      - main
+    tags:
+      - '*'

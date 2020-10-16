@@ -1,0 +1,15 @@
+{
+  "author": "fred belotte",
+  "license": "MIT",
+  "name": "@apticity/apticity",
+  "private": true,
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.1",
+    "bulma": "^0.9.1"
+  },
+  "scripts": {
+    "build": "bundle exec jekyll build",
+    "postinstall": "cp -r node_modules/@fortawesome/fontawesome-free/webfonts assets/fonts",
+    "start": "bundle exec jekyll serve"
+  }
+}

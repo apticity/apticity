@@ -1,0 +1,10 @@
+<header>
+  page header
+  <i class="fas fa-theater-masks"></i>
+
+  <nav>
+    {% for item in site.data.header_navigation %}
+    <a href="{{ item.url }}">{{ item.text }}</a>
+    {% endfor %}
+  </nav>
+</header>

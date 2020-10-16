@@ -1,0 +1,10 @@
+<footer>
+  page footer
+  <i class="fas fa-shoe-prints"></i>
+
+  <nav>
+    {% for item in site.data.footer_navigation %}
+    <a href="{{ item.url }}" target="_blank" rel="noopener noreferrer">{{ item.text }}</a>
+    {% endfor %}
+  </nav>
+</footer>
