@@ -1,4 +1,6 @@
-- text: github
-  url: https://github.com/apticity/apticity
-- text: twitter
-  url: https://twitter.com/howdy_apticity
+- href: https://github.com/apticity/apticity
+  icon: fab fa-github
+  text: github
+- href: https://twitter.com/howdy_apticity
+  icon: fab fa-twitter
+  text: twitter
