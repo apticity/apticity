@@ -1,10 +1,23 @@
 <header>
-  page header
-  <i class="fas fa-theater-masks"></i>
+  <nav class="navbar">
+    <div class="container">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="/">
+          <span class="icon"><i class="fas fa-broadcast-tower"></i></span>
+          <span>apticity</span>
+        </a>
+      </div>
 
-  <nav>
-    {% for item in site.data.header_navigation %}
-    <a href="{{ item.url }}">{{ item.text }}</a>
-    {% endfor %}
+      <div class="navbar-menu">
+        <div class="navbar-start">
+          {% for item in site.data.header_navigation %}
+          <a class="navbar-item" href="{{ item.href }}">
+            <span class="icon"><i class="{{ item.icon }}"></i></span>
+            <span>{{ item.text }}</span>
+          </a>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
   </nav>
 </header>
