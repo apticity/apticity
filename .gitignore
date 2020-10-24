@@ -1,9 +1,9 @@
-# jekyll
+# Jekyll
 .jekyll-cache/
 _site/
 
-# macos
+# macOS
 .DS_Store
 
-# nodejs
+# Node.js
 node_modules/

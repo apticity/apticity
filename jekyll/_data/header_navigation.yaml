@@ -1,4 +1,6 @@
-- text: blog
-  url: /blog
-- text: docs
-  url: /docs
+- href: /blog
+  icon: fas fa-rss
+  text: blog
+- href: /docs
+  icon: fas fa-bookmark
+  text: docs

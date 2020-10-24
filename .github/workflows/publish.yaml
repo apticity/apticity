@@ -19,9 +19,9 @@ jobs:
       - name: npm_build
         run: npm run build
 
-name: release
+name: publish
 
 on:
   push:
-    tags:
-      - "*"
+    branches:
+      - main

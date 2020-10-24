@@ -1,0 +1,44 @@
+# include parentheses around a sole arrow function parameter
+arrowParens: always
+
+# print spaces between brackets in object literals
+bracketSpacing: true
+
+# control whether Prettier formats quoted code embedded in the file
+embeddedLanguageFormatting: "off"
+
+# ensure entire git repository only contains Linux-style line endings in files
+endOfLine: lf
+
+# specify the global whitespace sensitivity for HTML files
+htmlWhitespaceSensitivity: ignore
+
+# insert a special @format marker at the top of the file
+insertPragma: false
+
+# specify the line length that the printer will wrap on
+printWidth: 120
+
+# wrap markdown text as-is since some services use a linebreak-sensitive renderer
+proseWrap: preserve
+
+# change when properties in objects are quoted
+quoteProps: consistent
+
+# format files that contain a special comment at the top of the file
+requirePragma: false
+
+# print semicolons at the ends of statements
+semi: true
+
+# use single quotes instead of double quotes
+singleQuote: true
+
+# specify the number of spaces per indentation-level
+tabWith: 2
+
+# print trailing commas wherever possible when multi-line
+trailingComma: es5
+
+# indent lines with tabs instead of spaces
+useTabs: false

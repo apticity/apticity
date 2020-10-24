@@ -1,10 +1,18 @@
-<footer>
-  page footer
-  <i class="fas fa-shoe-prints"></i>
+<footer class="footer">
+  <div class="container">
+    <nav class="level">
+      <div class="level-left">
+        <small class="level-item">&copy; 2020 apticity</small>
+      </div>
 
-  <nav>
-    {% for item in site.data.footer_navigation %}
-    <a href="{{ item.url }}" target="_blank" rel="noopener noreferrer">{{ item.text }}</a>
-    {% endfor %}
-  </nav>
+      <div class="level-right">
+        {% for item in site.data.footer_navigation %}
+        <a class="level-item navbar-item" href="{{ item.href }}" rel="noopener noreferrer" target="_blank">
+          <span class="icon"><i class="{{ item.icon }}"></i></span>
+          <span>{{ item.text }}</span>
+        </a>
+        {% endfor %}
+      </div>
+    </nav>
+  </div>
 </footer>

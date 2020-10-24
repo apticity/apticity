@@ -19,7 +19,7 @@ jobs:
       - name: npm_build
         run: npm run build
 
-name: build
+name: inspect
 
 on:
   pull_request:

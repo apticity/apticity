@@ -1,0 +1,14 @@
+# sets Linux-style line-endings to be used in the working directory
+* eol=lf text=auto
+
+# affects how Git generates diffs for C# files
+*.cs diff=csharp
+
+# affects how Git generates diffs for CSS files
+*.css diff=css
+
+# affects how Git generates diffs for HTML files
+*.html diff=html
+
+# affects how Git generates diffs for Markdown files
+*.md diff=markdown
