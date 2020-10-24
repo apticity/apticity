@@ -7,10 +7,20 @@ title: home
   <div class="hero-body">
     <div class="container has-text-centered">
       <div class="tile is-ancestor">
-        <div class="tile is-parent">
+        <div class="tile is-10 is-align-items-center is-parent">
           <div class="tile is-child">
             <h1 class="title is-1">apticity</h1>
             <h2 class="subtitle is-3">startup</h2>
+          </div>
+        </div>
+
+        <div class="tile is-parent">
+          <div class="tile is-child">
+            <div class="tags">
+              {% for item in site.data.technology_stack %}
+              <span class="tag is-dark is-medium">{{ item }}</span>
+              {% endfor %}
+            </div>
           </div>
         </div>
       </div>
