@@ -7,3 +7,7 @@ _site/
 
 # Node.js
 node_modules/
+
+# VS Code
+.vscode/*
+!.vscode/extensions.json
