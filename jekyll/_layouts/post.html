@@ -2,6 +2,49 @@
 layout: page
 ---
 
-<section>
-  {{ content }}
+<section class="hero is-fullheight-with-navbar is-light">
+  <div class="hero-head">
+    <div class="navbar">
+      <div class="container">
+        <div class="navbar-menu">
+          <div class="navbar-end">
+            <a class="navbar-item is-active" href="{{ page.url }}">
+              <h1 class="title is-2">post</h1>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-body">
+    <div class="container">
+      <div class="tile is-ancestor">
+        <div class="tile is-8 is-parent">
+          <div class="tile box is-child">
+            <article>
+              <header>
+                <h2 class="title is-4">{{ page.title }}</h2>
+                <h3 class="subtitle has-text-weight-light is-6">{{ page.author }}</h3>
+              </header>
+              <br />
+
+              <section>
+                <div class="content">{{ content }}</div>
+              </section>
+              <br />
+
+              <footer>
+                <p class="has-text-right">
+                  <time class="has-text-right is-size-7" datetime="{{ page.date | date: '%Y-%m-%d' }}">
+                    {{ page.date | date: '%d %B, %Y' }}
+                  </time>
+                </p>
+              </footer>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
