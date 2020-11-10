@@ -2,6 +2,8 @@
 permalink: /blog
 ---
 
+<!-- prettier-ignore -->
+
 <section class="hero is-fullheight-with-navbar is-light">
   <div class="hero-head">
     <div class="navbar">
@@ -9,7 +11,7 @@ permalink: /blog
         <div class="navbar-menu">
           <div class="navbar-end">
             <a class="navbar-item is-active" href="{{ page.url }}">
-              <h1 class="title is-2">blog</h1>
+              <span class="title is-2" id="blog">blog</span>
             </a>
           </div>
         </div>
@@ -21,26 +23,26 @@ permalink: /blog
     <div class="container">
       <div class="tile is-ancestor is-vertical">
         {% for post in site.posts %}
-        {% cycle '<div class="tile"></div>', '', '' %}
+        {% cycle '<div class="tile">', '', '' %}
         <div class="tile is-4 is-parent">
           <div class="tile box is-child">
             <article>
               <header>
-                <h2 class="title is-4">
+                <h1 class="title is-4">
                   <a class="has-text-primary" href="{{ post.url }}">{{ post.title }}</a>
-                </h2>
-                <h3 class="subtitle has-text-weight-light is-6">{{ post.author }}</h3>
+                </h1>
+                <h2 class="subtitle has-text-weight-light is-6">{{ post.author }}</h2>
               </header>
-              <br>
+              <br />
 
-              <section>
-                {{ post.excerpt }}
-              </section>
-              <br>
+              <section>{{ post.excerpt }}</section>
+              <br />
 
               <footer>
                 <p class="has-text-right">
-                  <time class="has-text-right is-size-7" datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: '%d %B, %Y' }}</time>
+                  <time class="has-text-right is-size-7" datetime="{{ post.date | date: '%Y-%m-%d' }}">
+                    {{ post.date | date: '%d %B, %Y' }}
+                  </time>
                 </p>
               </footer>
             </article>
