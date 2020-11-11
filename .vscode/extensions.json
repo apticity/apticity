@@ -1,0 +1,9 @@
+{
+  // recommended extensions for the workspace
+  "recommendations": [
+    "davidanson.vscode-markdownlint",
+    "editorconfig.editorconfig",
+    "esbenp.prettier-vscode",
+    "redhat.vscode-yaml"
+  ]
+}

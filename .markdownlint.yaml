@@ -1,0 +1,147 @@
+# heading levels should only increment by one level at a time
+MD001: true
+
+# heading style should be consistent
+MD003:
+  style: atx
+
+# unordered list style should be consistent
+MD004:
+  style: dash
+
+# inconsistent indentation for list items at the same level
+MD005: true
+
+# unordered list indentation should be consistent
+MD007:
+  indent: 2
+  start_indented: false
+
+# hard tab characters are to be replaced with spaces instead
+MD010:
+  code_blocks: false
+
+# multiple consecutive blank lines
+MD012:
+  maximum: 1
+
+# line length
+MD013:
+  code_block_line_length: 120
+  heading_line_length: 120
+  line_length: 120
+
+# dollar signs used before commands without showing output
+MD014: true
+
+# no space after hash on atx style heading
+MD018: true
+
+# multiple spaces after hash on atx style heading
+MD019: true
+
+# no space inside hashes on closed atx style heading
+MD020: true
+
+# multiple spaces inside hashes on closed atx style heading
+MD021: true
+
+# headings should be surrounded by blank lines
+MD022:
+  lines_above: 1
+  lines_below: 1
+
+# headings must start at the beginning of the line
+MD023: true
+
+# multiple headings with the same content
+MD024:
+  siblings_only: true
+
+# multiple top level headings in the same document
+MD025:
+  front_matter_title: '^\s*title:'
+  level: 1
+
+# trailing punctuation in heading
+MD026:
+  punctuation: '.:,;'
+
+# multiple spaces after blockquote symbol
+MD027: true
+
+# blank line inside blockquote
+MD028: true
+
+# ordered list item prefix
+MD029:
+  style: one_or_ordered
+
+# spaces after list markers
+MD030:
+  ol_multi: 1
+  ol_single: 1
+  ul_multi: 1
+  ul_single: 1
+
+# fenced code blocks should be surrounded by blank lines
+MD031:
+  list_items: false
+
+# lists should be surrounded by blank lines
+MD032: true
+
+# inline HTML
+MD033:
+  allowed_elements: []
+
+# bare URL used
+MD034: true
+
+# horizontal rule style
+MD035:
+  style: '---'
+
+# emphasis used instead of a heading
+MD036:
+  punctuation: '.:,;'
+
+# spaces inside emphasis markers
+MD037: true
+
+# spaces inside code span elements
+MD038: true
+
+# spaces inside link text
+MD039: true
+
+# fenced code blocks should have a language specified
+MD040: true
+
+# first line in file should be a top level heading
+MD041:
+  front_matter_title: '^\s*title:'
+  level: 1
+
+# no empty links
+MD042: true
+
+# required heading structure
+MD043: false
+
+# proper names should have the correct capitalization
+MD044: false
+
+# images should have alternate text (alt text)
+MD045: true
+
+# code block style
+MD046:
+  style: fenced
+
+# files should end with a single newline character
+MD047: true
+
+# code fence style
+MD048:
+  style: backtick
