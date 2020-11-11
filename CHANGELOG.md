@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning][semver].
 ### added
 
 - design and launch the home page
+- design and launch the blog page
 
 ## [0.0.0] :: 2020-10-20
 
